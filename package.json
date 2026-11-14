@@ -1,0 +1,19 @@
+{
+  "name": "lab3-inventory-management",
+  "version": "1.0.0",
+  "description": "Inventory and data management API for Web Dev III Lab 3",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check src/models/Product.js && node --check src/controllers/productController.js && node --check src/routes/productRoutes.js && node --check src/middleware/validateProduct.js && node --check src/middleware/errorHandler.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  }
+}
